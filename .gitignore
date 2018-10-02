@@ -16,3 +16,6 @@ yarn-error.log
 sftp-config.json
 gstftp
 ftp
+.ftp
+.gstftp
+.env.example
