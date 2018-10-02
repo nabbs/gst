@@ -1,0 +1,82 @@
+<style type="text/css">
+  .ms-slide .ms-slide-layers, .ms-overlay-layers .ms-slide-layers, .ms-fixed-layers {
+    top: 0!important;
+  }
+  .g-theme-bg-black-v1 {
+    width: 20%;
+  }
+
+  .ms-layer .btn-primary {
+    padding: 5px 15px;
+    font-size: 13px;
+  }
+
+  @media (max-width: 768px) {
+
+    .ms-layer {
+      font-size: 12px!important;
+    }
+
+    .ms-desc {
+      display: none!important;
+    }
+  }
+
+
+  .ad-banner {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+  }
+</style>
+
+
+<section id="home-slider">
+
+<div class="master-slider" id="masterslider">
+
+  @foreach($sliders as $slider)
+
+    <div class="ms-slide" data-url="{{$slider->main_url}}">
+
+     <img class="main-image" src="/images/blank.gif" data-src="{{$slider->main_image}}" alt="{{ $slider->title}}">
+
+    <div class="ms-layer u-ribbon-v1 text-uppercase g-pos-rel g-line-height-1_2 g-font-weight-700 g-font-size-16 g-font-size-18--md g-color-white g-theme-bg-black-v1 g-pa-10 g-mb-10" data-type="text" data-delay="10" data-effect="skewleft(50, 340)" data-ease="easeOutExpo" data-duration="2200">From <span class="g-color-primary">&pound;{{ $slider->price}}</span> </div>
+    <h3 class="ms-layer text-uppercase g-pos-rel g-line-height-1 g-font-weight-700 g-font-size-35 g-font-secondary g-color-white g-mb-10" data-type="text" data-delay="10" data-effect="skewright(50, 340)" data-ease="easeOutExpo" data-duration="2200">{{ $slider->title}}</h3>
+    <div class="ms-layer g-pos-rel g-line-height-1_2 g-max-width-550 ms-desc ms-hover-active" style="margin: 0px; padding: 0px; font-size: 13.49px; line-height: 15.4171px; display: none;">
+      <p class="g-mb-20 g-font-size-18 g-color-white-opacity-0_8">{{ $slider->description}}</p>
+    </div>
+    <div class="ms-layer g-pos-rel g-line-height-1_2 ms-hover-active">
+
+      <p class="g-mb-20 g-font-size-18 g-color-white-opacity-0_8">
+      @if ($slider->button_one !==null and $slider->button_url !==null)
+      <a class="btn btn-md text-uppercase btn-primary" href="{{ $slider->button_url}}">{{ $slider->button_one}}</a>
+      @endif
+
+      @if ($slider->button_two !==null and $slider->button_two_url !==null)
+      <a class="btn btn-md text-uppercase btn-primary" href="{{ $slider->button_two_url}}">{{ $slider->button_two}}</a>
+      @endif
+
+      @if ($slider->button_three !==null and $slider->button_three_url !==null)
+      <a class="btn btn-md text-uppercase btn-primary" href="{{ $slider->button_three_url}}">{{ $slider->button_three}}</a>
+      @endif
+
+      @if ($slider->button_four !==null and $slider->button_four_url !==null)
+      <a class="btn btn-md text-uppercase btn-primary" href="{{ $slider->button_four_url}}">{{ $slider->button_four}}</a>
+      @endif
+      </p>
+
+      </div>
+      {{-- <img class="ms-thumb" src="{{ $slider->thumb_image}}"  alt="Image description"> --}} </div>
+
+  @endforeach
+
+  </div>
+
+{{--   <video width="1500" height="300" muted="true" preload="auto" poster="" controls>
+    <source src="https://ads.gosearchtravel.com/www/delivery/avw.php?zoneid=2" type="video/mp4">
+
+  </video> --}}
+
+</section>
