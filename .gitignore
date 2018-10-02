@@ -1,1 +1,4 @@
 .DS_Store
+.env
+sft-config.json
+node_modules/
