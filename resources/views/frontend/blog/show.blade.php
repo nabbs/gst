@@ -77,7 +77,7 @@
 							<textarea class="form-control" name="body" required="" placeholder="Enter your Comments"></textarea>
 						</div>
 
-						<div class="g-recaptcha form-group" data-sitekey="6Lckd3EUAAAAAK6PS4YcF4B1zNo_zKoDn51sHrRm"></div>
+						{{-- <div class="g-recaptcha form-group" data-sitekey="6Lckd3EUAAAAAK6PS4YcF4B1zNo_zKoDn51sHrRm"></div> --}}
 
 						<div class="form-group">
 							<button type="submit" class="btn btn-primary">Submit Your Comment</button>

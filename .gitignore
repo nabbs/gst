@@ -19,3 +19,4 @@ ftp
 .ftp
 .gstftp
 .env.example
+sftp-config-alt.json
