@@ -20,3 +20,4 @@ ftp
 .gstftp
 .env.example
 sftp-config-alt.json
+min/
