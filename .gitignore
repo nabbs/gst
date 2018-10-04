@@ -21,3 +21,4 @@ ftp
 .env.example
 min/
 sftp-config-alt.json
+tui

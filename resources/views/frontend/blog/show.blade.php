@@ -93,7 +93,12 @@
 
 					@foreach($posts as $post)
 						@if ($post->status =='PUBLISHED')
-						<li class="list-group-item">
+
+					@php
+						$uri = Request::segment(2);
+					@endphp
+
+						<li class="@if ($uri === "$post->slug")active @endif list-group-item">
 							<a href="/blog/{{ $post->slug }}">{{ $post->title }}</a>
 						</li>
 						@endif
@@ -103,7 +108,7 @@
 				<h5 class="card-header">Topics</h5>
 				<ul class="list-group mb-lg-5">
 					@foreach($category as $category)
-					<li class="list-group-item"><a href="category/{{ $category->id }}">{{ $category->name }}</a></li>
+					<li class="list-group-item"><a href="/blog/category/{{ $category->id }}">{{ $category->name }}</a></li>
 					@endforeach
 				</ul>
 

@@ -19,7 +19,9 @@ class PostsController extends Controller
     {
     	$posts = Post::latest()->get();
 
-    	return view('frontend.blog.index', compact('posts'));
+        $postcategory = Category::all();
+
+    	return view('frontend.blog.index', compact('posts','postcategory'));
     }
 
 
@@ -76,5 +78,19 @@ class PostsController extends Controller
         return redirect('/blog')->with('success', true);
 
         // dd(request()->all());
+    }
+
+    public function showcategory($category_id)
+
+    {
+
+        $category = Category::find($category_id);
+
+        $posts = $category->posts;
+
+        $postcategory = Category::all();
+
+        return view('frontend.blog.index',compact('posts', 'postcategory'));
+
     }
 }

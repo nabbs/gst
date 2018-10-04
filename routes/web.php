@@ -5,7 +5,16 @@ Route::group(['prefix' => 'admin'], function () {
 });
 
 if (setting('site.website_status')==1) {
+    
+    Route::get('/sitemap',function(){
+    return response()->view('sitemap')
+      ->header('Content-Type', 'xml');
+    });
+    
+    Route::get('/blog/category/{category}', 'PostsController@showcategory');
 
+    Route::get('/blog', 'PostsController@index');
+    
 	Route::post('/subscribe', 'SubscribeController@create');
 
 	Route::post('/blog/posts','PostsController@store');
@@ -15,8 +24,6 @@ if (setting('site.website_status')==1) {
 	Route::get('/','HomeController@index');
 
 	Route::get('/blog/create','PostsController@create');
-
-	Route::get('/blog', 'PostsController@index');
 
 	Route::get('/blog/{slug}', 'PostsController@show');	
 
@@ -46,10 +53,6 @@ if (setting('site.website_status')==1) {
 
 	Route::get('/{slug}', 'PagesController@show');
 
-	// Auth::routes();
-
-	// Route::get('/home', 'HomeController@index')->name('home');
-
 	Route::get('/artisan/{cmd}', function($cmd) {
 	    $cmd = trim(str_replace("-",":", $cmd));
 	    $validCommands = ['cache:clear', 'optimize', 'route:cache', 'route:clear', 'view:clear', 'config:cache'];
@@ -60,7 +63,6 @@ if (setting('site.website_status')==1) {
 	        return "<h1>Not valid Artisan command</h1>";
 	    }
 	});
-
 }
 
 else{
