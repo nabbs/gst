@@ -1049,6 +1049,15 @@ transition: all 0.5s linear;
   margin-bottom: 20px;
 }
 
+#blog .list-group-item.active {
+  background-color: #f90;
+  border-color: #f90;
+}
+
+#blog .list-group-item.active a  {
+  color: #fff;
+}
+
 .blog-slider .img-fluid {
     height: 240px;
   }
