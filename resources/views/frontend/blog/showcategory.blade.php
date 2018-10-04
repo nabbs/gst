@@ -18,17 +18,17 @@ background-position: 0px -170px;
 	<div class="container">
 		<div class="row align-items-center text-center">
 			<div class="col-md-12">
-				<h1 class="display-4 probootstrap-section-heading probootstrap-animate">Travel tips and inspirations</h1>
+				<h1 class="display-4 probootstrap-section-heading probootstrap-animate"></h1>
 				<h3 class="probootstrap-animate">GoSearchTravel Blog</h3>
 			</div>
 		</div>
 	</div>
 </section>
-<section class="probootstrap_section" id="blog">
+<section class="probootstrap_section">
 	<div class="container">
 
 		<div class="row">
-			<div class="col-lg-8 mb-5">
+			<div class="col-lg-9 mb-5">
 				@if (session()->has('success'))
 				<div class="alert alert-success">
 					<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
@@ -53,36 +53,11 @@ background-position: 0px -170px;
 				@endif
 				@endforeach
 			</div>
-			<div class="col-md-4">
 
-				<h5 class="card-header">Recent Posts</h5>
-				<ul class="list-group mb-lg-5">
 
-					@foreach($posts as $post)
-						@if ($post->status =='PUBLISHED')
-						<li class="list-group-item">
-							<a href="/blog/{{ $post->slug }}">{{ $post->title }}</a>
-						</li>
-						@endif
-					@endforeach
 
-					@if (Request::segment(2) === 'category')
-						<li class="list-group-item"><a href="/blog">View All Posts</a></li>
-					@endif
-				</ul>
 
-			<h5 class="card-header">Topics</h5>
-				<ul class="list-group mb-lg-5">
-					@foreach($postcategory as $category)
-					@php
-						$uri = Request::segment(3);
-					@endphp
-
-					<li class="@if ($uri === "$category->id")active @endif list-group-item"><a href="/blog/category/{{ $category->id }}">{{ $category->name }}</a>
-
-					</li>
-					@endforeach
-				</ul>
+			<div class="col-md-3">
 
 					@include('frontend.layouts.adblock')
 				
