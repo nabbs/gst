@@ -34,11 +34,19 @@ $(document).ready(function () {
 		setPath = adURL + "7";
 	}
 
+	// if (getURLPath == "/holidays"){
+	// 	setPath = adURL + "";
+	// }
+
 	// if (getURLPath == "/hajj"){
 	// 	setPath = adURL + "";
 	// }
 
 	// if (getURLPath == "/umrah"){
+	// 	setPath = adURL + "";
+	// }
+
+	// if (getURLPath == "/cruise"){
 	// 	setPath = adURL + "";
 	// }
 
