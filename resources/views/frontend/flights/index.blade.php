@@ -24,7 +24,7 @@
 
         {{-- banner ad  --}}
 
-        <p align="center" class="mt-lg-5"><a href="https://scripts.affiliatefuture.com/AFClick.asp?affiliateID=343230&merchantID=2401&programmeID=6921&mediaID=155870&tracking=&afsource=10&url="" target="_blank"><img border="0" src="https://banners.affiliatefuture.com/2401/155870.gif"></a></p>
+        <div id="topBanner" class="mt-5 text-center"></div>
 
         {{-- end banner ad --}}
 
@@ -35,25 +35,25 @@
 
         <div class="row mb-4">
 
-          <div class="col-md-3">
+          <div class="col-md-3" title="Search for flights to Dubai">
 
           <script async src="//www.travelpayouts.com/weedle/widget.js?marker=129036&host=flights.gosearchtravel.com&locale=en&currency=gbp&destination=DXB&destination_name=Dubai" charset="UTF-8"></script>
 
           </div>
 
-          <div class="col-md-3">
+          <div class="col-md-3" title="Search for flights to Lahore, Pakistan">
 
             <script async src="//www.travelpayouts.com/weedle/widget.js?marker=129036&host=flights.gosearchtravel.com&locale=en&currency=gbp&destination=LHE&destination_name=Lahore" charset="UTF-8"></script>
 
           </div>
 
-          <div class="col-md-3">
+          <div class="col-md-3" title="Search for flights to New York, USA">
 
             <script async src="//www.travelpayouts.com/weedle/widget.js?marker=129036&host=flights.gosearchtravel.com&locale=en&currency=gbp&destination=NYC&destination_name=NewYork" charset="UTF-8"></script>
 
           </div>
 
-          <div class="col-md-3">
+          <div class="col-md-3" title="Search for flights to Australia">
 
             <script async src="//www.travelpayouts.com/weedle/widget.js?marker=129036&host=flights.gosearchtravel.com&locale=en&currency=gbp&destination=SYD&destination_name=Australia" charset="UTF-8"></script>
 
@@ -63,31 +63,32 @@
         
         <div class="row mb-5">
 
-          <div class="col-md-3">
+          <div class="col-md-3" title="Search for flights to Los Angeles, USA">
 
             <script async src="//www.travelpayouts.com/weedle/widget.js?marker=129036&host=flights.gosearchtravel.com&locale=en&currency=gbp&destination=LAX&destination_name=LosAngeles" charset="UTF-8"></script>
 
           </div>
 
-          <div class="col-md-3">
+          <div class="col-md-3" title="Search for flights to Bangkok, Thailand">
 
             <script async src="//www.travelpayouts.com/weedle/widget.js?marker=129036&host=flights.gosearchtravel.com&locale=en&currency=gbp&destination=BKK&destination_name=Bangkok" charset="UTF-8"></script>
 
           </div>
 
-          <div class="col-md-3">
+          <div class="col-md-3" title="Search for flights to Rome, Italy">
 
             <script async src="//www.travelpayouts.com/weedle/widget.js?marker=129036&host=flights.gosearchtravel.com&locale=en&currency=gbp&destination=ROM&destination_name=Rome" charset="UTF-8"></script>
 
           </div>
 
-          <div class="col-md-3">
+          <div class="col-md-3" title="Search for flights to Tokyo, Japan">
 
             <script async src="//www.travelpayouts.com/weedle/widget.js?marker=129036&host=flights.gosearchtravel.com&locale=en&currency=gbp&destination=tyo&destination_name=Tokyo" charset="UTF-8"></script>
 
           </div>
 
         </div>
+
 
       </div>
 
@@ -96,7 +97,7 @@
 
     <div class="mt-lg-5 mb-lg-5">
 
-        {!!setting('site.google_adsense')!!}
+        <div class="ad-block"></div>
 
     </div>
 

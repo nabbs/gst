@@ -18,7 +18,7 @@
 
       <div class="border"> <span class="border__inner"><i class="fas fa-globe-asia defcolour"></i></span></div>
 
-      <div class="hotel-select probootstrap-animate">
+      <div class="hotel-select probootstrap-animate" title="5 Star Hotels in Thailand, SeaView Hotels, Luxury Hotels">
 
         <h3>Thailand</h3>
 
@@ -26,7 +26,13 @@
 
       </div>
 
-      <div class="hotel-select probootstrap-animate">
+      {{-- banner ad  --}}
+
+      <div id="topBanner" class="mt-5 mb-5 text-center"></div>
+
+      {{-- end banner ad --}}
+
+      <div class="hotel-select probootstrap-animate" title="5 Star Hotels in Dubai, Lake View Hotels, Hotels in the City Centre">
 
         <h3>Dubai</h3>
 
@@ -34,7 +40,7 @@
 
       </div>
 
-      <h2 class="heading text-center probootstrap-animate" title="Recommended Hotels at GoSearchTravel">Recommended Hotels</h2>
+      <h2 class="heading text-center probootstrap-animate" title="Recommended Hotels at GoSearchTravel in Turkey, Las Vegas, Osaka, Sydney and many more.">Recommended Hotels</h2>
 
       <div class="border"> <span class="border__inner"><i class="fas fa-hotel defcolour"></i></span> </div>
 
@@ -72,7 +78,7 @@
 
     <div class="mt-lg-5 mb-lg-5">
 
-        {!!setting('site.google_adsense')!!}
+        <div class="ad-block"></div>
 
     </div>
 

@@ -111,6 +111,12 @@
 
 @include('frontend.umrah.modal')
 
+<div class="mt-lg-5 mb-lg-5">
+
+        <div class="ad-block"></div>
+
+    </div>
+
 </section>
 
 @endsection
