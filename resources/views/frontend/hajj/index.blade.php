@@ -1,5 +1,5 @@
 @extends ('frontend.layouts.master')
-@section('title', 'Search and Compare Hajj Packages for your special journey at GoSearchTravel.com | GST')
+@section('title', 'Search and Compare Hajj Packages at GoSearchTravel.com')
 @section ('content')
 
 @include('frontend.hajj.header')
