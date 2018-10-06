@@ -14,7 +14,7 @@
 
       <div class="container">
 
-        <h2 class="heading text-center probootstrap-animate" title="Low Fare Calender - The best airfares for a year ahead">Low Fares Calendar</h2>
+        <h2 class="heading text-center probootstrap-animate" title="Low Fare Calender - The best airfares for a year ahead">Low Fare Calendar</h2>
 
         <p class="text-center"> The best airfares for a year ahead</p>
 
