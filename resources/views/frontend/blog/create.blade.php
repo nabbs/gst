@@ -1,5 +1,5 @@
 @extends ('frontend.layouts.master')
-@section('title', 'Create Blog Post at GoSearchTravel.com | GST')
+@section('title', 'Create Blog Post at GoSearchTravel.com')
 @section ('content')
 
 <style>
