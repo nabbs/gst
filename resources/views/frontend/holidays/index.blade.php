@@ -1,5 +1,5 @@
 @extends ('frontend.layouts.master')
-@section('title', 'Search and Compare Holiday Packages at GoSearchTravel.com | GST')
+@section('title', 'Search and Compare Holiday Packages at GoSearchTravel.com')
 @section ('content')
   <section class="probootstrap-cover overflow-hidden relative" style="background-image: url('/images/holidays/bg_1.jpg');" data-stellar-background-ratio="0.5" id="section-home">
     <div class="overlay"></div>

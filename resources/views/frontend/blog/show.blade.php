@@ -1,5 +1,5 @@
 @extends ('frontend.layouts.master')
-@section('title', "{$post->title} - GoSearchTravel.com  | GST")
+@section('title', "{$post->title} - GoSearchTravel.com")
 @section ('content')
 
 @include('frontend.blog.header')
