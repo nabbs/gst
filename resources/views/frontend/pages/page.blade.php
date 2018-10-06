@@ -1,6 +1,6 @@
 @extends ('frontend.layouts.master')
 
-@section('title', "GST - {$page->title}")
+@section('title', "GoSearchTravel.com - {$page->title} | GST")
 
 @section ('content')
 

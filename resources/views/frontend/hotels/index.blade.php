@@ -1,6 +1,6 @@
 @extends ('frontend.layouts.master')
 
-@section('title', 'GST - Hotels')
+@section('title', 'Search and Compare Hotels for the best deals at GoSearchTravel.com | GST ')
 
 @section ('content')
 
