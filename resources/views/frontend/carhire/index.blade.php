@@ -1,5 +1,5 @@
 @extends ('frontend.layouts.master')
-@section('title', 'Search and Compare Car Hire for the best deals at GoSearchTravel.com | GST')
+@section('title', 'GST - Car Hire')
 @section ('content')
 
 @include('frontend.carhire.header')

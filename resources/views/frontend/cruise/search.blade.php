@@ -1,5 +1,5 @@
 @extends ('frontend.layouts.master')
-@section('title', 'Cruises Search Result at GoSearchTravel.com | GST')
+@section('title', 'GST - Cruise')
 @section ('content')
 
 @include('frontend.cruise.header')

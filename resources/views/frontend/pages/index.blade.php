@@ -1,5 +1,5 @@
 @extends ('frontend.layouts.master')
-@section('title', 'Pages at GoSearchTravel.com | GST')
+@section('title', 'GST - Pages')
 @section ('content')
 <section class="probootstrap_section">
 	<div class="container">
