@@ -1,5 +1,5 @@
 @extends ('frontend.layouts.master')
-@section('title', 'GST - Blog')
+@section('title', 'Blog Topics / Categories at GoSearchTravel.com | GST')
 @section ('content')
 <style>
 #page-header {

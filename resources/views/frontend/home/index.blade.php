@@ -1,5 +1,5 @@
 @extends ('frontend.layouts.master')
-@section('title', 'GST - Dream, Explore, Compare - GO!')
+@section('title', 'Dream, Explore, Compare - GO!, GoSearchTravel.com | GST')
 @section ('content')
 
 	@include('frontend.home.slider')
