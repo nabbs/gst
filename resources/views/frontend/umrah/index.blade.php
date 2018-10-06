@@ -1,6 +1,6 @@
 @extends ('frontend.layouts.master')
 
-@section('title', 'GST - Umrah')
+@section('title', 'Compare Umrah Packages for your special journey at GoSearchTravel.com | GST')
 
 @section ('content')
 
@@ -110,6 +110,12 @@
 </div>
 
 @include('frontend.umrah.modal')
+
+    <div class="mt-lg-5 mb-lg-5">
+
+        <div class="ad-block"></div>
+
+    </div>
 
 </section>
 
