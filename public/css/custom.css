@@ -229,6 +229,7 @@ footer .imgGallery>div>div {
     }
 
 @media (min-width: 768px) {
+
     footer .footerContent .list-unstyled li, footer .footerContent p {
         font-size:11px
     }
@@ -1123,3 +1124,11 @@ transition: all 0.5s linear;
   position: fixed;
   right: 130px;
 } */
+
+body.modal-open {
+    overflow: hidden;
+    position: fixed;
+}
+body.viewport-lg {
+    position: absolute; 
+}

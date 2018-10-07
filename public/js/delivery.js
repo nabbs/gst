@@ -158,7 +158,8 @@ $(document).ready(function () {
 
   if(!$("#ablockercheck").is(":visible"))
    {
-     $("#ablockermsg").text("Please disable adblocker.").show();
+     //$("#ablockermsg").show();
+     $('#abMessage').modal('show');
    }
 
 });
