@@ -55,7 +55,17 @@ $(document).ready(function () {
 		setPath = adURL + "4";
 	}
 
+	if (getURLPath == "/public/blog"){
+		setPath = adURL + "4";
+	}
+
+
+
 	if (getURLPath.indexOf("/blog/") === 0) {
+        setPath = adURL + "4";
+    }
+
+    if (getURLPath.indexOf("/public/blog/") === 0) {
         setPath = adURL + "4";
     }
 
@@ -156,10 +166,9 @@ $(document).ready(function () {
 
   $('.tickets-container').append(ins);
 
-  if(!$("#ablockercheck").is(":visible"))
-   {
-     //$("#ablockermsg").show();
-     $('#abMessage').modal('show');
-   }
+  // if(!$("#ablockercheck").is(":visible"))
+  //  {
+  //    $('#abMessage').modal('show');
+  //  }
 
 });
