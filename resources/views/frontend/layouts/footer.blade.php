@@ -47,9 +47,21 @@
       </div>
   </footer>
 
+  <div class="ad-placement" id="ablockercheck"></div>
+  <div id="abMessage" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg p-5">
+      <div class="modal-content">
+         <div class="modal-header">
+          <h5 class="modal-title" id="disableTitle">Please disable Ad Blocker</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+       <p class="p-3"> Our website is made possible by displaying online advertisements to our visitors. Please consider supporting us by disabling your ad blocker on our website.</p>
+      </div>
+    </div>
+  </div>
 
-<div class="ad-placement" id="ablockercheck"></div>
-<div id="ablockermsg" style="display: none"></div>
 
 {{--   <style>
 #KMxDyVmzanif {
