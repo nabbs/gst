@@ -47,7 +47,7 @@
       </div>
   </footer>
 
-  <div class="ad-placement" id="ablockercheck"></div>
+  {{-- <div class="ad-placement" id="ablockercheck"></div>
   <div id="abMessage" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-lg p-5">
       <div class="modal-content">
@@ -60,7 +60,7 @@
        <p class="p-3"> Our website is made possible by displaying online advertisements to our visitors. Please consider supporting us by disabling your ad blocker on our website.</p>
       </div>
     </div>
-  </div>
+  </div> --}}
 
 
 {{--   <style>
