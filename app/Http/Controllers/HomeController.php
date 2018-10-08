@@ -26,7 +26,7 @@ class homeController extends Controller
 
     	$posts = Post::latest()->take(6)->get();
 
-        $sliders = Slider::all();
+        $sliders = Slider::latest()->get();
 
     	return view('frontend.home.index', compact('places', 'hotdeals', 'posts', 'sliders'));
     }

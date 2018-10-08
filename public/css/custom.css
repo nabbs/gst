@@ -1132,3 +1132,32 @@ body.modal-open {
 body.viewport-lg {
     position: absolute; 
 }
+
+.ms-slide .ms-slide-layers, .ms-overlay-layers .ms-slide-layers, .ms-fixed-layers {
+    top: 0!important;
+  }
+  .g-theme-bg-black-v1 {
+    width: 20%;
+  }
+
+  .ms-layer .btn-primary {
+    padding: 5px 15px;
+    font-size: 13px;
+  }
+
+  @media (max-width: 768px) {
+
+    .ms-layer {
+      font-size: 18px!important;
+    }
+
+    .ms-desc {
+      display: none!important;
+    }
+
+    .ms-layer .btn-primary {
+      font-size: 11px;
+      margin-bottom: 4px;
+    }
+
+  }

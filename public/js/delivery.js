@@ -42,9 +42,9 @@ $(document).ready(function () {
 	// 	setPath = adURL + "";
 	// }
 
-	// if (getURLPath == "/umrah"){
-	// 	setPath = adURL + "";
-	// }
+	if (getURLPath == "/umrah"){
+		setPath = adURL + "11";
+	}
 
 	// if (getURLPath == "/cruise"){
 	// 	setPath = adURL + "";
@@ -72,8 +72,17 @@ $(document).ready(function () {
 
 	var TopRefresh = function () {
 		if (getClientWidth >= 468) {
+
+			if (getURLPath == "/umrah"){
+				var ldurl =  setPath;
+				}
+				else {
+				var ldurl = adURL + "9";
+				}
+
+
 			$.ajax({
-				url: adURL + "9",
+				url: ldurl,
 				cache: false,
 				success: function (html) {
 					$('#topBanner').html(html);
