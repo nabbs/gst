@@ -43,7 +43,8 @@
 
   @endswitch --}}
   <title>@yield('title')</title>
-  <link rel="shortcut icon" href="/images/gst-icon.png" type="image/x-icon" />
+  <link rel="canonical" href="https://www.gosearchtravel.com/">
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
   <link rel="stylesheet" href="/css/base.css" />
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-90058788-1"></script>
   <script>

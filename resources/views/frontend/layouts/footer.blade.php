@@ -21,8 +21,11 @@
                 <h5>Popular cities</h5>
                 <div class="row">
                   @foreach ($featured as $image)
-                    <div class="col-4 pd-5">
-                      <a href="/"><span>{{$image->city}}</span><img class="img-thumbnail" title="{{$image->city}}" src="/{{$image->image}}"> </a> </div>
+                    <div class="col-3 pd-5">
+                      <a href="{{$image->link}}"><span>{{$image->city}}</span>{{-- <img class="img-thumbnail" title="{{$image->city}}" src="{{$image->image}}">  --}}</a> 
+
+                      <p>{{$image->link}}</p>
+                    </div>
                   @endforeach
                 </div>
               </div>
