@@ -4,17 +4,18 @@
 
   <div class="container">
 
-    <div class="row justify-content-center mb-5">
+    <div class="row text-center mb-3">
 
-      <div class="col-md-12 text-center mb-5">
+      <div class="col-md-12">
 
         <h2 class="display-4 border-bottom probootstrap-section-heading">Hot Deals</h2>
+        <p>Checkout the latest deals. Choose your next get away!</p>
 
       </div>
 
     </div>
 
-    <div class="row">
+    <div class="row mb-5">
 
       @foreach($hotdeals as $hotdeal)
 
@@ -28,9 +29,9 @@
 
                 <a href="{{ $hotdeal->link }}">
                   @if($hotdeal->image=='')
-                  <img class="img-responsive" src="../images/default.jpg" alt="">
+                  <img class="img-responsive" src="../images/default.jpg" alt="{!!$hotdeal->heading!!}">
                   @else
-                  <img class="img-responsive" src="{{ $hotdeal->image }}" alt="">
+                  <img class="img-responsive" src="{{ $hotdeal->image }}" alt="{!!$hotdeal->heading!!}">
                   @endif
                 </a>
 

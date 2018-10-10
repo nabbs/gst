@@ -2,17 +2,19 @@
 
 	<div class="container">
 
-		<div class="row text-center mb-5">
+		<div class="row text-center mb-3">
 
 			<div class="col-md-12">
 
 				<h2 class="display-4 border-bottom probootstrap-section-heading">Top Destinations</h2>
 
+				<p>Popular destinations around the world. </p>
+
 			</div>
 
 		</div>
 
-		<div class="row">
+		<div class="row mb-5">
 
 			@foreach($places as $place)
 

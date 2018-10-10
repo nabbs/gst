@@ -14,13 +14,13 @@
 <script src="/master-slider/source/assets/js/masterslider.min.js"></script>
 <script src="//platform-api.sharethis.com/js/sharethis.js#property=5b4c85e24a104f0011ca6988&product=inline-share-buttons">
 </script>
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <script src='https://www.google.com/recaptcha/api.js'></script>
 <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
 <script type="text/javascript" src="/js/jquery.sticky-kit.js"></script>
 {{-- <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> --}}
-<script src="/js/main.js"></script>
-<script src="/js/delivery.js"></script>
+<script async src="/js/main.js"></script>
+<script async src="/js/delivery.js"></script>
 
 {{-- <script>
 new Vue({

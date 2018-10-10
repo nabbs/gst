@@ -11,9 +11,10 @@
 
 <section class="probootstrap_section" id="latestblog">
   <div class="container">
-    <div class="row text-center mb-5">
+    <div class="row text-center mb-3">
       <div class="col-md-12">
         <h2 class="display-4 border-bottom probootstrap-section-heading">Latest From the Blog</h2>
+        <p>Explore the latest inspirations and city guides </p>
       </div>
     </div>
     <div class="row">
@@ -37,7 +38,7 @@
                 {{$post->created_at->diffForHumans()}}
                 {{-- {{$post->created_at->toFormattedDateString()}} --}}
               </div>
-              <a href="/blog/{{$post->slug}}" title="{{$post->title}}"><img src="{{$post->image}}" alt="" class="img-fluid"></a>
+              <a href="/blog/{{$post->slug}}" title="{{$post->title}}"><img src="{{$post->thumb_image}}" alt="{{$post->title}}" class="img-fluid"></a>
 
               <div class="media-body">
 
