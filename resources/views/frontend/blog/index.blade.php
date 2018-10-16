@@ -14,6 +14,7 @@ background-position: 0px -170px;
 }
 }
 </style>
+
 <section class="probootstrap-cover relative" id="page-header">
 	<div class="container">
 		<div class="row align-items-center text-center">
@@ -55,7 +56,7 @@ background-position: 0px -170px;
 			</div>
 			<div class="col-md-4">
 
-				<h5 class="card-header">Recent Posts</h5>
+				<h5 class="card-header">@if (Request::segment(2) === 'category') Posts in Category @else Recent Posts @endif  </h5>
 				<ul class="list-group mb-lg-5">
 
 					@foreach($posts as $post)
@@ -67,11 +68,11 @@ background-position: 0px -170px;
 					@endforeach
 
 					@if (Request::segment(2) === 'category')
-						<li class="list-group-item"><a href="/blog">View All Posts</a></li>
+						<li class="list-group-item text-right"><a href="/blog"><i>View All Posts</i></a></li>
 					@endif
 				</ul>
 
-			<h5 class="card-header">Topics</h5>
+			<h5 class="card-header">Categories</h5>
 				<ul class="list-group mb-lg-5">
 					@foreach($postcategory as $category)
 					@php

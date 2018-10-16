@@ -184,6 +184,7 @@ figure.effect-milo:hover .effect-block, .package-wiget:hover .effect-block{opaci
 #page-header h2{font-weight:700!important;}
 @media (max-width:767px){#page-header h2{font-size:22px!important;}
 #page-header h3{font-size:14px!important;}
+.ad-container > div {margin-top: 20px;}
 }
 @media (max-width:1023px){#page-header h2{font-size:32px;}
 #page-header h3{font-size:22px;}
@@ -207,6 +208,7 @@ figure.effect-milo:hover .effect-block, .package-wiget:hover .effect-block{opaci
 #blog .cta{background-color:#ff9900;width:100%;padding:20px;margin-bottom:20px;}
 #blog .list-group-item.active{background-color:#f90;border-color:#f90;}
 #blog .list-group-item.active a{color:#fff;}
+#blog .ad-container img {width:350px;}
 .blog-slider .img-fluid{height:240px;}
 .blog-slider .owl-item:hover{opacity:0.7!important;cursor:pointer;}
 .blog-slider a p{color:#4b4b4b;}
