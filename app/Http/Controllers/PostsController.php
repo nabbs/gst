@@ -21,7 +21,7 @@ class PostsController extends Controller
 
         $postcategory = Category::all();
 
-    	return view('frontend.blog.index', compact('posts','postcategory'));
+    	return view('frontend.blog.isoIndex', compact('posts','postcategory'));
     }
 
 

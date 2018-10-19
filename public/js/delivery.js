@@ -20,8 +20,6 @@ $(document).ready(function () {
 	}
 	//end sub-domain ad delivery
 
-
-
 	if (getURLPath == "/flights"){
 		setPath = adURL + "5";
 	}
@@ -130,7 +128,7 @@ $(document).ready(function () {
 					success: function (html) {
 						$('#rightBanner').html(html);
 						setTimeout(function () {
-							RightRefresh();aw3
+							RightRefresh();
 						}, interval);
 					}
 				});
@@ -166,13 +164,19 @@ $(document).ready(function () {
 
 
 
-	var ins = '<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6930499180490669" data-ad-slot="5439710635" data-ad-format="auto"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script>'
+	var ins = '<p style="font-size:12px; text-align:center; margin:0; padding:0;">Advertisement</p><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6930499180490669" data-ad-slot="5439710635" data-ad-format="auto"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script>'
+
+	var adt = '<p style="font-size:12px; text-align:center; margin:0; padding:0;">Advertisement</p>'
 
 	$('.ad-block').each(function() {
-  	$(this).append(ins);
+	  $(this).append(ins);
 	});
 
+$('#blog #grid-view .card-deck').last().append('<div class="col-md-4 mb-5 item isotopeSelector">'+ ins +'</div>');
 
+
+
+	$('.ad-container').prepend(adt);
   $('.tickets-container').append(ins);
 
   // if(!$("#ablockercheck").is(":visible"))

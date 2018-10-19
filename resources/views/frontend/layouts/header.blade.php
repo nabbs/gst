@@ -2,6 +2,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
   <meta name="_token" content="{{csrf_token()}}" />
+  <meta name="p:domain_verify" content="70b490a951220a7673c19b327c50f2a3"/>
   <meta name="owner" content="GoSearchTravel.com" />
   <meta name="author" content="@GoSearchTravel" />
   <meta property="og:site_name" content="GoSearchTravel.com" >
