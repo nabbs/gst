@@ -8,8 +8,8 @@ min-height: 500px;
   <div class="container">
     <div class="row align-items-center text-center">
       <div class="col-md mt-lg-5">
-        <h2 class="mb-3 probootstrap-animate">We compare packages from the UK's best Umrah Agents</h2>
-        <h3 class="mb-5 probootstrap-animate">Get the best price for your special journey!</h3>
+        <h1 class="mb-3 probootstrap-animate">We compare packages from the UK's best Umrah Agents</h1>
+        <h2 class="mb-5 probootstrap-animate">Get the best price for your special journey!</h2>
         {{-- <div class="srchForm mx-auto col-lg-8 probootstrap-animate">
           <form method='POST' action="/umrah/search" target="_self" class="form-inline">
             {{csrf_field()}}

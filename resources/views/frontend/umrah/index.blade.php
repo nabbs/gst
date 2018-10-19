@@ -113,7 +113,11 @@
 
     <div class="mt-lg-5 mb-lg-5">
 
+        <div align="center" class="ad-container">
+
         <div id="topBanner" align="center"></div>
+
+      </div>
 
     </div>
 

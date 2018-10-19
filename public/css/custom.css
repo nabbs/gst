@@ -2,7 +2,7 @@ a:hover{text-decoration:none;}
 button{cursor:pointer;}
 .ion-chevron-left, .ion-chevron-right{color:#fff;}
 .navbar-toggler{background:#ff9900;}
-.navbar-toggler:focus, a:focus, span:focus, p:focus, button:focus{border:none;outline:transparent;}
+.navbar-toggler:focus, a:focus, span:focus, p:focus, button:focus{border:none;outline:none;box-shadow:none!important;}
 @media (max-width:991px){.probootstrap_navbar{background:#000!important;}
 .navbar-collapse{border-top:1px solid rgb(255, 153, 0);margin-top:15px;}
 .navbar-nav{margin-top:10px;}
@@ -71,7 +71,7 @@ footer .footerContent .list-inline li{padding:0 2px}
 .package-wiget{background-color:#fff;margin-bottom:30px;box-shadow:4px 3px 5px 0px rgba(0, 0, 0, 0.03);}
 .package-wiget .grid figure{border-radius:0;}
 .package-content{padding:0 15px 5px;}
-.package-content h5{color:#000;margin:0;font-size:13px;text-transform:uppercase;letter-spacing:1px;font-weight:600!important;}
+.package-content h5, .package-content h6 {color:#000;margin:0;font-size:13px;text-transform:uppercase;letter-spacing:1px;font-weight:600!important;min-height:30px;}
 .package-price{color:#bebebe;font-size:12px;line-height:20px;letter-spacing:1px;margin-top:10px;}
 .package-price .price{font-weight:300;margin:0;line-height:30px;display:inline-block;color:#f94141 !important;}
 .package-price .price span{font-size:16px;}
@@ -146,7 +146,7 @@ figure.effect-milo:hover .effect-block, .package-wiget:hover .effect-block{opaci
 #search-results .card-footer i{font-size:25px;padding-right:10px;color:rgb(96, 153, 240);}
 #search-results i, #search-results .card-footer img{cursor:pointer;}
 #search-results .tooltip{display:none;}
-#search-results .card:hover{transform:translateY(-8px);box-shadow:0 0 8px 0 rgba(0,0,0,0.03), 0 20px 30px 0 rgba(0,0,0,0.1);-webkit-transform:translateY(-8px);-webkit-box-shadow:0 0 8px 0 rgba(0,0,0,0.03), 0 20px 30px 0 rgba(0,0,0,0.1);}
+.card:hover{transform:translateY(-8px);box-shadow:0 0 8px 0 rgba(0,0,0,0.03), 0 20px 30px 0 rgba(0,0,0,0.1);-webkit-transform:translateY(-8px);-webkit-box-shadow:0 0 8px 0 rgba(0,0,0,0.03), 0 20px 30px 0 rgba(0,0,0,0.1);}
 #search-results .card{-webkit-transition:all 0.2s ease-in-out;transition:all 0.2s ease-in-out}
 #search-results .green{color:rgb(12,167,12);}
 #search-results .red{color:rgb(220, 16, 22);font-weight:500;}
@@ -163,7 +163,9 @@ figure.effect-milo:hover .effect-block, .package-wiget:hover .effect-block{opaci
 #search-results select option{font-size:18px;background-color:rgb(255,184,77);}
 #search-results select option:before{content:">";font-size:20px;display:none;padding-right:10px;padding-left:5px;color:#fff;}
 #search-results select option:hover:before{display:inline;}
-.package-content h5, #search-results .card-deck h5{color:#000;margin:0;font-size:13px;text-transform:uppercase;letter-spacing:1px;font-weight:600!important;min-height:30px;}
+.package-content h6, #search-results .card-deck h6{font-size:10px;}
+#blog .package-content h5 {font-size: 12px}
+#blog .package-content p {font-size:15px; letter-spacing: 0.7px;}
 #search-results .filter-row{background:#ff9900;border:1px solid #ff9900;border-radius:5px;padding-top:10px;}
 #search-results .filter-row i{font-size:30px;color:#fff;margin-bottom:0!important;}
 #search-results .filter-row .active i{color:#000;}
@@ -213,10 +215,11 @@ figure.effect-milo:hover .effect-block, .package-wiget:hover .effect-block{opaci
 .blog-slider .owl-item:hover{opacity:0.7!important;cursor:pointer;}
 .blog-slider a p{color:#4b4b4b;}
 .blog-slider a:hover{color:#ff9900;}
-.blog-slider .link-mask{position:absolute;top:0;left:0;width:100%;height:425px;}
+.link-mask{position:absolute;top:0;left:0;width:100%;height:100%;}
 .blog-slider .item-wrapper{position:relative;}
 .blog-slider .media-body{padding:1em;}
 .blog-slider .media-body h5{font-size:1em;}
+.blog-slider figure.effect-milo:hover img, .package-wiget:hover img{opacity:0.6;-webkit-transform:translate3d(0, 0, 0) scale(1);transform:translate3d(0, 0, 0) scale(1);}
 @media (min-width:767px){.sticky{position:fixed!important;top:100px;}
 .stickyfootUp{bottom:300px!important;}
 #latestblog .owl-carousel .owl-nav .owl-prev{left:-30px;}
@@ -231,4 +234,7 @@ body.viewport-lg{position:absolute;}
 @media (max-width:768px){.ms-layer{font-size:18px!important;}
 .ms-desc{display:none!important;}
 .ms-layer .btn-primary{font-size:11px;margin-bottom:4px;}
+}
+p:empty {
+	display: none;
 }

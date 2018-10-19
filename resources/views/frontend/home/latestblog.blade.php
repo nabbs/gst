@@ -26,32 +26,33 @@
 
           @php
             $truncTitle = str_limit($post->title, 25);
-            $truncBody = str_limit($post->body, 35);
+            $truncBody = str_limit($post->body, 101);
           @endphp
 
           <div class="item-wrapper">
 
-            <a href="/blog/{{$post->slug}}" title="{{$post->title}}" class="link-mask"></a>
-
-            <div class="media probootstrap-media d-block align-items-stretch mb-4" style="position: relative">
-              <div style="position: absolute; top: 53%; right: 0; padding: 1em; background: rgba(248, 249, 250, 0.8);   font-weight: bold; color: #4b4b4b;">
-                {{$post->created_at->diffForHumans()}}
-                {{-- {{$post->created_at->toFormattedDateString()}} --}}
+           <div class="package-wiget" style="position: relative">
+              
+              <div class="grid">
+                <figure class="effect-milo" style="position: relative">
+                  <a href="/blog/{{ $post->slug }}"><img src="{{$post->image}}" title="{{ $post->title }}" class="img-fluid">
+                  </a>
+                  <div style="position: absolute; bottom: 0; right: 0; padding: 1em; background: rgba(248, 249, 250, 0.8);   font-weight: bold; color: #4b4b4b;">
+                    {{$post->created_at->diffForHumans()}}
+                  </div>
+                  
+                </figure>
               </div>
-              <a href="/blog/{{$post->slug}}" title="{{$post->title}}"><img src="{{$post->thumb_image}}" alt="{{$post->title}}" class="img-fluid"></a>
-
-              <div class="media-body">
-
-                <a href="/blog/{{$post->slug}}" title="{{$post->title}}">
-
-                <h5 class="mb-3">{{$post->title}}</h5> 
-
-                <p>{!!$truncBody!!}</p>
-
-                </a>
-
+              <div class="package-content">
+                <h5>{{ $post->title }}</h5>
+                {{-- <h6>By: {{ $post->author }} </h6> --}}
+                <p>{!! $truncBody !!} </p>
+                <div align="right">
+                  
+                </div>
               </div>
 
+              <a href="/blog/{{ $post->slug }}" class="link-mask"><span style="position: absolute; right:10px; bottom:5px;">Continue Reading →</span></a>
             </div>
 
           </div>
@@ -63,5 +64,6 @@
         </div>
       </div>
     </div>
+    <p align="right"><a href="/blog" class="btn btn-primary">View All Posts</a></p>
   </div>
 </section>
