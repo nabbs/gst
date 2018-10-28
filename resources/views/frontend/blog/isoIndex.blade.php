@@ -1,5 +1,5 @@
 @extends ('frontend.layouts.master')
-@section('title', 'GST Blog - latest inspirations, city guides and family holidays')
+@section('title', 'GoSearchTravel Blog - latest inspirations, city guides and family holidays')
 @section ('content')
 <style>
 #page-header {
@@ -69,8 +69,37 @@ background-position: 0px -170px;
 				@endforeach
 			</div>
 			
-			<div class="ad-block"></div>
 		</div>
+
+
+		  <div id="list-view" class="isotopeContainer">
+		  	
+		  	@foreach($posts as $post)
+				@if ($post->status =='PUBLISHED')
+				@php
+				$truncated = str_limit($post->body, 101);
+				@endphp
+
+				<div class="row item isotopeSelector mb-5 package-wiget {{$post->category_id}}">
+
+					<div class="col-md-3">
+						<a href="/blog/{{ $post->slug }}"><img src="{{$post->image}}" title="{{ $post->title }}" class="img-fluid"></a>
+					</div>
+					<div class="col-md-9">
+						<h5>{{ $post->title }}</h5>
+								<h6>By: {{ $post->author }} </h6>
+								<p>{!! $truncated !!} </p>
+					</div>
+
+					<a href="/blog/{{ $post->slug }}" class="link-mask">
+								<span style="position: absolute; right:10px; bottom: 10px;">Continue Reading →</span>
+							</a>
+				</div>
+				@endif
+			@endforeach
+		  </div>
+
+		<div class="ad-block"></div>
 	</div>
 </section>
 @endsection

@@ -288,12 +288,61 @@ if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine
         }
     });
 
-    function validateEmail(email)
-    {
-        var re = /\S+@\S+\.\S+/;
-        return re.test(email);
-    }
 
+//contact us form submission and validation
+
+$('#contact').on('submit', function (e) {
+    var data = {
+      name: $('#name').val(),
+      email: $('#email').val(),
+      message:$('#message').val(),
+    };
+    if(validateEmail(data.email)) {
+    $.ajaxSetup({
+    headers: {
+      'X-CSRF-TOKEN': $('meta[name="_token"]').attr('content')
+    },
+    beforeSend: function() {
+      $('#submit').text('sending...');
+    },
+    complete: function(){
+       $('#submit').text('message received - thanks!');
+       window.setTimeout(function () {
+          $('#submit').text('send');
+          
+      }, 3000);
+    }
+    });
+    $.ajax({
+        method: 'POST',
+        url: '/contact',
+        data: data,
+        success: function () {
+            $('#contact')[0].reset();
+        }
+    });
+
+  }
+
+  else {
+    $('#email').css('color','red');
+    $('#email').val('Please enter correct email');
+            window.setTimeout(function () {
+                $('#email').val('');
+                $('#email').css('color','black');
+            }, 2000);
+  }
+
+    return false;
+});
+
+
+
+  function validateEmail(email)
+  {
+      var re = /\S+@\S+\.\S+/;
+      return re.test(email);
+  }
 
 $('.nav-tabs a').click(function() {
     $('#tab-heading').text($(this).attr('data-tabname'))
@@ -447,7 +496,6 @@ $('.nav-tabs a').click(function() {
   // });
 
 
-
   $('#list-view').hide();
   $('#list').click(function(event){
       event.preventDefault();
@@ -477,5 +525,3 @@ $('.nav-tabs a').click(function() {
 //         'event_callback': function(){document.location = url;}
 //       });
 //     }
-
-

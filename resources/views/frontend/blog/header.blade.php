@@ -10,6 +10,7 @@
 		@if ($post->status =='PUBLISHED')
 
         <h1 class="probootstrap-animate">{{ $post->title }}</h1>
+        <h3 class="probootstrap-animate">GoSearchTravel Blog</h3>
 
         @endif
       </div>
