@@ -10,7 +10,10 @@ if (setting('site.website_status')==1) {
     return response()->view('sitemap')
       ->header('Content-Type', 'xml');
     });
-    
+
+
+    Route::post('/contact', 'PagesController@contact');
+
     Route::get('/blog/category/{category}', 'PostsController@showcategory');
 
     Route::get('/blog', 'PostsController@index');

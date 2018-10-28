@@ -1,5 +1,5 @@
 @extends ('frontend.layouts.master')
-@section('title', 'GST Blog - latest inspirations, city guides and family holidays')
+@section('title', 'GoSearchTravel Blog - latest inspirations, city guides and family holidays')
 @section ('content')
 <style>
 #page-header {

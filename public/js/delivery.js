@@ -108,7 +108,7 @@ $(document).ready(function () {
 	TopRefresh();
 
 	var RightRefresh = function () {
-		if (getClientWidth >= 468) {
+		if (getClientWidth >= 768) {
 			$.ajax({
 				url: setPath,
 				cache: false,
@@ -121,7 +121,7 @@ $(document).ready(function () {
 			});
 		}
 
-		if (getClientWidth < 468) {
+		if (getClientWidth < 768) {
 				$.ajax({
 					url: adURL + "4",
 					cache: false,
