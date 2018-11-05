@@ -15,6 +15,10 @@
 <section class="probootstrap_section">
   <div class="container">
     <h2 class="heading text-center display-4 font-light probootstrap-animate fadeInUp probootstrap-animated">Holidays</h2>
+
+    <p>Coming Soon..</p>
+
+    <p>In the mean time, why not search for <a href="/flights">flights</a> or <a href="/hotels">hotels</a>?</p>
   </div>
 </section>
 @endsection
