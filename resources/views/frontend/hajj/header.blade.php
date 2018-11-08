@@ -38,8 +38,8 @@ background-image: url('/images/backgrounds/mecca-3.jpg');
           <ul class="list-inline probootstrap-animate">
             <li class="list-inline-item mr-4 mb-4"><img src="/images/logos/agoda.png" width="100"></li>
             <li class="list-inline-item mr-4 mb-4"><img src="/images/logos/booking.com.png" width="130"></li>
-            <li class="list-inline-item mr-4 mb-4"><img height="25" src="images/logos/easy.svg" alt=""></li>
-            <li class="list-inline-item mr-4 mb-4"><img src="images/logos/happy.svg" alt="" height="30"></li>
+            <li class="list-inline-item mr-4 mb-4"><img height="25" src="/images/logos/easy.svg" alt=""></li>
+            <li class="list-inline-item mr-4 mb-4"><img src="/images/logos/happy.svg" alt="" height="30"></li>
           </ul>
         </div>
       </div>
