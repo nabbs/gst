@@ -15,7 +15,7 @@ $(document).ready(function () {
 		case "hotels":
 			setPath = adURL + "6";
 			break;
-				default:
+			default:
 			setPath = "";
 	}
 	//end sub-domain ad delivery
