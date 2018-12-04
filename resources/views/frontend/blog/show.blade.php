@@ -4,6 +4,17 @@
 
 @include('frontend.blog.header')
 
+@php
+
+$title = "$post->title";
+$image = "$post->thumb_image";
+$description = str_limit(strip_tags($post->body, 150));
+$author = "$post->author";
+$created = "$post->created_at";
+$updated = "$post->updated_at";
+
+@endphp
+
 <section id="blog">
 
 	<div class="container">
@@ -28,8 +39,8 @@
 
 				<div class="row mb-2">
 
-					<div class="col-md-6"><p> <span>{{$post->created_at->toFormattedDateString()}} </span> 
-						<br><span>by: {{ $post->author}}</span> {{-- <br> <span>{{$d7}} {{$d14}}</span> --}}</div>
+					<div class="col-md-6"><p> <span>{{$post->created_at->toFormattedDateString()}} </span> .
+						<br><span>by: {!!$post->author!!}</span> {{-- <br> <span>{{$d7}} {{$d14}}</span> --}}</div>
 					<div class="col-md-6"><div class="sharethis-inline-share-buttons text-lg-right"></div></div>
 
 				</div>

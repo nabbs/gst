@@ -2,20 +2,25 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
   <meta name="_token" content="{{csrf_token()}}" />
-  <meta name="p:domain_verify" content="70b490a951220a7673c19b327c50f2a3"/>
-  <meta name="owner" content="GoSearchTravel.com" />
-  <meta name="author" content="@GoSearchTravel" />
-  <meta property="og:site_name" content="GoSearchTravel.com" >
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="GoSearchTravel.com" data-dynamic="true" />
-  <meta name="description" content="{{setting('site.meta_description')}}" /> 
+  <meta name="description" content="{{setting('site.meta_description')}}" />
+{{--   <meta name="owner" content="GoSearchTravel.com" /> <meta name="author" content="@GoSearchTravel" /> --}}
   @php
-   $uri = Request::path();
+    $uri = Request::path();
   @endphp
   @if ($uri == 'flights' or $uri == 'hotels' or $uri == 'carhire' or $uri == 'holidays' or $uri == 'hajj' or $uri == 'umrah' or $uri == 'cruise') 
-    <meta name="keywords" content="{{setting('site.meta_keywords_'.$uri)}}" />
+  <meta name="keywords" content="{{setting('site.meta_keywords_'.$uri)}}" />
   @else 
   <meta name="keywords" content="{{setting('site.meta_keywords')}}" />
+  @endif
+
+  @if (\Request::is('blog/*'))
+  
+    @include('frontend.blog.socialtags')
+
+  @else
+
+    @include('frontend.layouts.sw-socialtags')
+
   @endif
   {{--   @switch($uri)
     @case( 'flights' )
