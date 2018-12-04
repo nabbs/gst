@@ -2,9 +2,8 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
   <meta name="_token" content="{{csrf_token()}}" />
-  <meta name="owner" content="GoSearchTravel.com" />
   <meta name="description" content="{{setting('site.meta_description')}}" />
-  <meta name="author" content="@GoSearchTravel" />
+{{--   <meta name="owner" content="GoSearchTravel.com" /> <meta name="author" content="@GoSearchTravel" /> --}}
   @php
     $uri = Request::path();
   @endphp
@@ -18,11 +17,9 @@
   
     @include('frontend.blog.socialtags')
 
-  @else 
+  @else
 
-  <meta property="og:site_name" content="GoSearchTravel.com" >
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="GoSearchTravel.com" data-dynamic="true" />
+    @include('frontend.layouts.sw-socialtags')
 
   @endif
   {{--   @switch($uri)
