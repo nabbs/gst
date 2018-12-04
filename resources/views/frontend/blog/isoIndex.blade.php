@@ -52,7 +52,7 @@ background-position: 0px -170px;
 							</div>
 							<div class="package-content">
 								<h5>{{ $post->title }}</h5>
-								<h6>By: {{ $post->author }} </h6>
+								<h6>By: {!!$post->author !!} </h6>
 								<p>{!! $truncated !!} </p>
 								<div align="right">
 									

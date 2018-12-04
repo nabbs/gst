@@ -238,3 +238,5 @@ body.viewport-lg{position:absolute;}
 p:empty {
 	display: none;
 }
+.arabic {padding: 0 0 0px 0;margin: 0 0 5px 0;font-family: arabic;font-size: 25px;line-height: 38px;direction: rtl;margin: auto;display: table; font-weight: bold;}
+#blog .block ul li, .block ol li {margin-bottom:20px!important;}
