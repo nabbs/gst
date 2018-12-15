@@ -14,6 +14,17 @@ background-position: 0px -170px;
 }
 }
 </style>
+
+@php
+
+$title = "$post->title";
+$image = "$post->thumb_image";
+$description = str_limit(strip_tags($post->body, 150));
+$author = "$post->author";
+$created = "$post->created_at";
+$updated = "$post->updated_at";
+
+@endphp
 <section class="probootstrap-cover relative" id="page-header">
 	<div class="container">
 		<div class="row align-items-center text-center">

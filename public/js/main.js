@@ -462,7 +462,7 @@ $('.nav-tabs a').click(function() {
     });
 
 
-    $('#search-results .card-deck a').on("click", function () {
+    $('#search-results .card-deck a, #hotdeals a, #section-city-guides .dest-icon a, #latestblog a').on("click", function () {
       var url = $(this).attr('href');
       var agent = $(this).attr('data-agent');
       gtag('event', 'click', {
@@ -474,6 +474,18 @@ $('.nav-tabs a').click(function() {
       //console.log('clicked on link '+agent);
     });
 
+
+    // $('#hotdeals a.trpr').on("click", function () {
+    //   var url = $(this).attr('href');
+    //   var agent = $(this).attr('data-agent');
+    //   gtag('event', 'click', {
+    //     'event_category': agent,
+    //     'event_label': url,
+    //     'transport_type': 'beacon'
+    //     // 'event_callback': function(){document.location = url}
+    //   });
+    //   //console.log('clicked on link '+agent);
+    //});
 
   //   $(document).mouseleave(function(e) {
   //   $('#exitpopup').css('left', (window.innerWidth/2 - $('#exitpopup').width()/2));

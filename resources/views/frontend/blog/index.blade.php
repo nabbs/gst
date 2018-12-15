@@ -15,6 +15,17 @@ background-position: 0px -170px;
 }
 </style>
 
+@php
+
+$title = "GoSearchTravel Blog";
+$image = "https://www.gosearchtravel.com/settings/August2018/kIiABrWs7Bcid61rKdoW.png";
+$description = "latest inspirations, city guides and family holidays";
+$author = "GoSearchTravel";
+$created = "";
+$updated = "";
+
+@endphp
+
 <section class="probootstrap-cover relative" id="page-header">
 	<div class="container">
 		<div class="row align-items-center text-center">
