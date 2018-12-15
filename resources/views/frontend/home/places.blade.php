@@ -30,7 +30,7 @@
 
 					<p>{{ $place->description }}</p>
 
-					<a href="#" class="thm-btn">Read More</a> 
+					{{-- <a href="#" class="thm-btn">Read More</a> --}} 
 
 				</div>
 
@@ -46,25 +46,25 @@
 						
 						@if ($place->flightlink != '')
 
-							<a href="{{$place->flightlink}}"><i class="flaticon-transport" data-toggle="tooltip" data-placement="top" title="" data-original-title="Find Flights"></i></a>
+							<a href="{{$place->flightlink}}" data-agent="HP Places Flights to {{ $place->city }}"><i class="flaticon-transport" data-toggle="tooltip" data-placement="top" title="" data-original-title="Find Flights" ></i></a>
 
 						@endif
 
 						@if ($place->hotellink != '')
 
-							<a href="{{$place->hotellink}}"><i class="flaticon-front" data-toggle="tooltip" data-placement="top" title="" data-original-title="Find Hotels"></i></a>
+							<a href="{{$place->hotellink}}" data-agent="HP Places Hotels in {{ $place->city }}"><i class="flaticon-front" data-toggle="tooltip" data-placement="top" title="" data-original-title="Find Hotels"></i></a>
 
 						@endif
 
 						@if ($place->tourlink != '')	
 
-							<a href="{{$place->tourlink}}"><i class="flaticon-earth-globe" data-toggle="tooltip" data-placement="top" title="" data-original-title="Find Holidays"></i></a>
+							<a href="{{$place->tourlink}}" data-agent="HP Places Holidays in {{ $place->city }}"><i class="flaticon-earth-globe" data-toggle="tooltip" data-placement="top" title="" data-original-title="Find Holidays"></i></a>
 
 						@endif
 
 						@if ($place->cruiselink != '')	
 
-							<a href="{{$place->cruiselink}}"><i class="flaticon-ship" data-toggle="tooltip" data-placement="top" title="" data-original-title="Find Criuses"></i></a>
+							<a href="{{$place->cruiselink}}" data-agent="HP Places Cruises To {{ $place->city }}"><i class="flaticon-ship" data-toggle="tooltip" data-placement="top" title="" data-original-title="Find Criuses"></i></a>
 
 						@endif
 
