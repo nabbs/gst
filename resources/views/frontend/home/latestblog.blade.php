@@ -35,7 +35,7 @@
               
               <div class="grid">
                 <figure class="effect-milo" style="position: relative">
-                  <a href="/blog/{{ $post->slug }}"><img src="{{$post->image}}" title="{{ $post->title }}" class="img-fluid">
+                  <a href="/blog/{{ $post->slug }}" data-agent="HP latestBlog - {{ $post->title }}"><img src="{{$post->image}}" title="{{ $post->title }}" class="img-fluid">
                   </a>
                   <div style="position: absolute; bottom: 0; right: 0; padding: 1em; background: rgba(248, 249, 250, 0.8);   font-weight: bold; color: #4b4b4b;">
                     {{$post->created_at->diffForHumans()}}
@@ -52,7 +52,7 @@
                 </div>
               </div>
 
-              <a href="/blog/{{ $post->slug }}" class="link-mask"><span style="position: absolute; right:10px; bottom:5px;">Continue Reading →</span></a>
+              <a href="/blog/{{ $post->slug }}" data-agent="HP latestBlog - {{ $post->title }}" class="link-mask"><span style="position: absolute; right:10px; bottom:5px;">Continue Reading →</span></a>
             </div>
 
           </div>
@@ -64,6 +64,6 @@
         </div>
       </div>
     </div>
-    <p align="right"><a href="/blog" class="btn btn-primary">View All Posts</a></p>
+    <p align="right"><a href="/blog" class="btn btn-primary" data-agent="HP latestBlog - View All Posts">View All Posts</a></p>
   </div>
 </section>
