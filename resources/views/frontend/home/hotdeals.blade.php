@@ -19,6 +19,8 @@
 
       @foreach($hotdeals as $hotdeal)
 
+      @if ($hotdeal->published !==0)      
+
       <div class="col-sm-4">
 
           <div class="package-wiget">
@@ -27,7 +29,7 @@
 
               <figure class="effect-milo">
 
-                <a href="{{ $hotdeal->link }}">
+                <a href="{{ $hotdeal->link }}" data-agent="HotDeals - {{ $hotdeal->title }} - {{$hotdeal->agent_name}}">
                   @if($hotdeal->image=='')
                   <img class="img-responsive" src="../images/default.jpg" alt="{!!$hotdeal->heading!!}">
                   @else
@@ -44,7 +46,7 @@
                     {{-- <div>
                       {!!$hotdeal->description!!}
                     </div> --}}
-                     <a href="{{ $hotdeal->link }}" class="btn btn-primary" target="_blank">{{ $hotdeal->button }}</a>
+                     <a href="{{ $hotdeal->link }}" class="btn btn-primary" target="_blank" data-agent="HotDeals - {{ $hotdeal->title }} - {{$hotdeal->agent_name}}">{{ $hotdeal->button }}</a>
                   </div>
 
                 </figcaption>
@@ -54,7 +56,7 @@
             </div>
             
             <div class="package-content">
-              <a href="{{ $hotdeal->link }}" target="_blank">
+              <a href="{{ $hotdeal->link }}" target="_blank" data-agent="HotDeals - {{ $hotdeal->title }} - {{$hotdeal->agent_name}}">
               <h5>{{ $hotdeal->title }}</h5>
               @if ($hotdeal->price != '')              
               <div class="package-price">from <span class="price"> <span class="amount">&pound;{{ $hotdeal->price }}</span> </span> /{{ $hotdeal->duration }} </div>
@@ -74,6 +76,9 @@
             </div>
           </div>
         </div>
+
+        @endif
+
         @endforeach
     </div>
   </div>

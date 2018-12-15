@@ -206,7 +206,7 @@ figure.effect-milo:hover .effect-block, .package-wiget:hover .effect-block{opaci
 #blog h1{font-size:2rem!important;}
 #blog h2{margin-bottom:20px;}
 #blog .block, #blog .ad-block{margin-bottom:40px;}
-#blog p{margin-bottom:30px;line-height:27px;}
+#blog p{margin-bottom:30px;line-height:1.7;}
 #blog .cta{background-color:#ff9900;width:100%;padding:20px;margin-bottom:20px;}
 #blog .list-group-item.active{background-color:#f90;border-color:#f90;}
 #blog .list-group-item.active a{color:#fff;}
@@ -238,5 +238,5 @@ body.viewport-lg{position:absolute;}
 p:empty {
 	display: none;
 }
-.arabic {padding: 0 0 0px 0;margin: 0 0 5px 0;font-family: arabic;font-size: 25px;line-height: 38px;direction: rtl;margin: auto;display: table; font-weight: bold;}
+.arabic {padding: 0 0 0px 0;margin: 0 0 5px 0;font-family: arabic;font-size: 25px;direction: rtl;margin: auto;display: table; font-weight: bold;}
 #blog .block ul li, .block ol li {margin-bottom:20px!important;}

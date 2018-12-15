@@ -39,7 +39,7 @@ $updated = "$post->updated_at";
 
 				<div class="row mb-2">
 
-					<div class="col-md-6"><p> <span>{{$post->created_at->toFormattedDateString()}} </span> .
+					<div class="col-md-6"><p> <span>{{$post->created_at->toFormattedDateString()}} </span>
 						<br><span>by: {!!$post->author!!}</span> {{-- <br> <span>{{$d7}} {{$d14}}</span> --}}</div>
 					<div class="col-md-6"><div class="sharethis-inline-share-buttons text-lg-right"></div></div>
 
