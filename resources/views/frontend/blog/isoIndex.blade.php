@@ -44,7 +44,7 @@ background-position: 0px -170px;
 								<figure class="effect-milo" style="position: relative">
 									<a href="/blog/{{ $post->slug }}"><img src="{{$post->image}}" title="{{ $post->title }}" class="img-fluid">
 									</a>
-									<div style="position: absolute; bottom: 0; right: 0; padding: 1em; background: rgba(248, 249, 250, 0.8);   font-weight: bold; color: #4b4b4b;">
+									<div style="position: absolute; bottom: 0; right: 0; padding: 1em; background: rgba(248, 249, 250, 0.8); font-weight: bold; color: #4b4b4b;">
 										{{$post->created_at->diffForHumans()}}
 									</div>
 									
