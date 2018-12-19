@@ -1,6 +1,6 @@
 @extends ('frontend.layouts.master')
 
-@section('title', 'Search and Compare Flights at GoSearchTravel.com')
+@section('title', setting('site.title_flights'))
 
 @section ('content')
 

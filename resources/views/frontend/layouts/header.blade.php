@@ -2,15 +2,17 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
   <meta name="_token" content="{{csrf_token()}}" />
-  <meta name="description" content="{{setting('site.meta_description')}}" />
-  <meta name="google-site-verification" content="D7uzzAKUtReA5CRW8fuiKGbbhMH2jv4r4fyWAdgJBYI" />
 {{--   <meta name="owner" content="GoSearchTravel.com" /> <meta name="author" content="@GoSearchTravel" /> --}}
   @php
     $uri = Request::path();
   @endphp
   @if ($uri == 'flights' or $uri == 'hotels' or $uri == 'carhire' or $uri == 'holidays' or $uri == 'hajj' or $uri == 'umrah' or $uri == 'cruise') 
+   
+  <meta name="description" content="{{setting('site.meta_description_'.$uri)}}" />
   <meta name="keywords" content="{{setting('site.meta_keywords_'.$uri)}}" />
-  @else 
+
+  @else
+  <meta name="description" content="{{setting('site.meta_description')}}" />
   <meta name="keywords" content="{{setting('site.meta_keywords')}}" />
   @endif
 
