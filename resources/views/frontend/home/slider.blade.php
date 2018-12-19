@@ -39,12 +39,12 @@
 
   @endforeach
 
-  <div class="ms-slide">
+  {{-- <div class="ms-slide">
     <video width="50%" height="50%" controls>
   <source src="/video/gst-promo-video.mp4" type="video/mp4">
 </video>
 
-  </div>
+  </div> --}}
   </div>
 
 {{--   <video width="1500" height="300" muted="true" preload="auto" poster="" controls>

@@ -1,6 +1,6 @@
 @extends ('frontend.layouts.master')
 
-@section('title', 'Compare Umrah Packages at GoSearchTravel.com')
+@section('title', 'GoSearchTravel provide Umrah packages to compare at lowest prices | Umrah')
 
 @section ('content')
 
