@@ -2,7 +2,7 @@
   <div class="container">
     <div class="row">
       <div class="col-md-3 mt-5 text-right">
-        <h2 class="text-uppercase g-line-height-1_2 g-font-weight-700 g-font-size-22 g-font-secondary g-color-white mb-0 u-divider-right"> <span class="d-block g-font-style-normal g-font-size-16 g-color-primary g-mb-5">Search for </span><span id="tab-heading">your flights</span></h2>
+        <h2 class="text-uppercase g-line-height-1_2 g-font-weight-700 g-font-size-22 g-font-secondary g-color-white mb-0 u-divider-right"> <span class="d-block g-font-style-normal g-font-size-16 g-color-primary g-mb-5">Search and Compare </span><span id="tab-heading">your flights</span></h2>
       </div>
       <div class="col-md-9">
         <div class="container">

@@ -1,5 +1,7 @@
 @extends ('frontend.layouts.master')
-@section('title', 'Compare Flights, Hotel, Car Hire, Hajj and Umrah | Dream, Explore, Compare - GO!, GoSearchTravel.com')
+
+@section('title', setting('titles.home'))
+
 @section ('content')
 
 	@include('frontend.home.slider')

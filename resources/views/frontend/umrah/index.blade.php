@@ -1,6 +1,6 @@
 @extends ('frontend.layouts.master')
 
-@section('title', 'GoSearchTravel provide Umrah packages to compare at lowest prices | Umrah')
+@section('title', setting('titles.umrah'))
 
 @section ('content')
 
@@ -15,7 +15,7 @@
 
     <div class="col-md-12 text-center mb-3 probootstrap-animate">
 
-      <h2 class="probootstrap-section-heading"><small class="text-muted"><em id="totalItems"></em> Packages</small></h2>
+      <h2 class="probootstrap-section-heading"><small class="text-muted">Showing <em id="totalItems"></em> Packages</small></h2>
 
       <div class="border"> <span class="border__inner"><i class="fas fa-hands defcolour"></i></span> </div>
 

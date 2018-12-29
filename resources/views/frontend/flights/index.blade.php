@@ -1,6 +1,6 @@
 @extends ('frontend.layouts.master')
 
-@section('title', setting('site.title_flights'))
+@section('title', setting('titles.flights'))
 
 @section ('content')
 

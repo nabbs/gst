@@ -4,12 +4,21 @@ background-image: url('/images/backgrounds/madina-3.jpg');
 min-height: 500px;
 }
 </style>
+
 <section class="probootstrap-cover relative" id="page-header">
+
   <div class="container">
+
     <div class="row align-items-center text-center">
+
       <div class="col-md mt-lg-5">
+
         <h1 class="mb-3 probootstrap-animate">We compare packages from the UK's best Umrah Agents</h1>
+
         <h2 class="mb-5 probootstrap-animate">Get the best price for your special journey!</h2>
+
+        <h3 class="mb-5 probootstrap-animate"><strong>Umrah 2019 Packages. Find all Umrah Packages for any season. Search from Economy to 5 Star packages.</strong></h3>
+
         {{-- <div class="srchForm mx-auto col-lg-8 probootstrap-animate">
           <form method='POST' action="/umrah/search" target="_self" class="form-inline">
             {{csrf_field()}}
@@ -42,6 +51,9 @@ min-height: 500px;
           </ul>
         </div> --}}
       </div>
+
     </div>
+
   </div>
+
 </section>
