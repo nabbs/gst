@@ -7,8 +7,8 @@ background-image: url('/images/backgrounds/hotel-4.jpg');
   <div class="container">
     <div class="row align-items-center text-center">
       <div class="col-md-12">
-        <h2 class="mb-2 probootstrap-animate">Book a hotel and save up to 60%</h2>
-        <h3 class="mb-5 probootstrap-animate">Book a room at a great price!</h3>
+        <h1 class="mb-2 probootstrap-animate">Compare hotel deals and save up to 60%</h1>
+        <h2 class="mb-5 probootstrap-animate">Compare hotel deals and book a room at a great price!</h2>
         <script charset="utf-8" src="//www.travelpayouts.com/widgets/97b317f636806a09a2300defc208e489.js?v=1466" async>
         </script>
         <div class="mt-5">

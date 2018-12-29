@@ -43,7 +43,7 @@
 
     @if ($item->title !== 'Holidays' and $item->title !== 'Hajj' and $item->title !== 'Cruise')    
         <li class="{{ $isActive }} nav-item">
-            <a href="{{ url($item->link()) }}" target="{{ $item->target }}" class="nav-link">
+            <a href="{{ url($item->link()) }}" target="{{ $item->target }}" class="nav-link" title="Compare {{ $item->title }}">
                 {!! $icon !!}
                 <span>{{ $item->title }}</span>
             </a>

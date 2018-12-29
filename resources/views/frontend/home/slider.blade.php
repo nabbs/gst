@@ -1,5 +1,5 @@
 <section id="home-slider">
-<h1 class="text-hide" style="text-indent: -10000px; padding: 0; margin: 0;">Hero Promo Slider. Flights and Hotels to cities around the world. </h1>
+<h1 class="text-hide" style="text-indent: -10000px; padding: 0; margin: 0;">Compare Flights, Compare Hotels, Compare Hajj 2019 Umrah Packages</h1>
 <div class="master-slider" id="masterslider">
   @foreach($sliders as $slider)
 
